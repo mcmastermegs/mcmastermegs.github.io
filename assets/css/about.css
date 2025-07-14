@@ -1,0 +1,70 @@
+/* About Section Styling */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.about-subtitle {
+    font-size: 1.3rem;
+    color: #6cc04a;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.about-text {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+.about-image {
+    margin-top: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image-caption {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
