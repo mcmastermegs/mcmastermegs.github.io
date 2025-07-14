@@ -1,0 +1,124 @@
+/* Members Page Specific Styles */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.member-photo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.member-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.member-info h4 {
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.member-school {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.member-position {
+    color: #6cc04a;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.member-degree {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    text-align: center;
+}
+
+.member-email {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.member-email a {
+    color: #6cc04a;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.member-email a:hover {
+    color: #fff;
+}
+
+.member-more-info {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.member-more-info:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.join-section {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.join-section h4 {
+    color: #6cc04a;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .member-card {
+        padding: 1rem;
+    }
+
+    .member-photo img {
+        width: 100px;
+        height: 100px;
+    }
+}
