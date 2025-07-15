@@ -36,3 +36,72 @@
     background: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
+
+
+
+
+
+/* Contact Section - Properly Aligned Side by Side */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;  /* This ensures proper alignment */
+    gap: 15rem;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.contact li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h3 {
+    margin: 0 0 0.5rem 0;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Email styling */
+.contact li:first-child a {
+    color: #6cc04a;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact li:first-child a:hover {
+    color: #fff;
+}
+
+/* Social icons styling */
+.contact .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact .icons li a {
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.contact .icons li a:hover {
+    color: #6cc04a;
+}
+
+/* Responsive - Stack on mobile */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+}
